@@ -145,7 +145,7 @@ AngularUi、ui-router、oclazyload、angular-material、ui-bootstrap、ui-grid�
 
 ```js
 var customTimeout = $timeout(function () {
-// your code
+  // your code
 }, 1000);
 
 $timeout.cancel(customTimeout);
@@ -156,11 +156,11 @@ $timeout.cancel(customTimeout);
 ```js
 // .$watch() 会返回一个停止注册的函数
 var unWatchFn = $rootScope.$watch(‘someGloballyAvailableProperty’, function (newVal) {
-if (newVal) {
-// we invoke that deregistration function, to disable the watch
-unWatchFn();
-...
-}
+  if (newVal) {
+    // we invoke that deregistration function, to disable the watch
+    unWatchFn();
+    ...
+  }
 });
 ```
 
@@ -172,7 +172,7 @@ unWatchFn();
 
 ```js
 myApp.config(function ($compileProvider) {
-$compileProvider.debugInfoEnabled(false);
+  $compileProvider.debugInfoEnabled(false);
 });
 ```
 
