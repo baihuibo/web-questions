@@ -155,7 +155,7 @@ $timeout.cancel(customTimeout);
 
 ```js
 // .$watch() 会返回一个停止注册的函数
-var unWatchFn = $rootScope.$watch(‘someGloballyAvailableProperty’, function (newVal) {
+var unWatchFn = $rootScope.$watch('someGloballyAvailableProperty', function (newVal) {
   if (newVal) {
     // we invoke that deregistration function, to disable the watch
     unWatchFn();
